@@ -1,0 +1,170 @@
+html, body {
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    position: relative;
+    background-color: #121717;
+    color: #fff;
+    font-family: "Epilogue";
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+#expense-container {
+    padding: 52px 0;
+}
+
+#expense-entry-button {
+    padding: 12px 68px;
+    width: fit-content;
+    margin: 28px auto 24px;
+    background-color: #1cc994;
+    border-radius: 24px;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Epilogue";
+    cursor: pointer;
+}
+
+.expense-overview {
+    padding: 24px;
+    border: 1px solid #3d524d;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+#expense-total {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.date {
+    color: #9eb8b0;
+}
+
+/* individual expenses listing */
+
+.expense-information {
+    padding-top: 48px;
+}
+
+.expense-information h2 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.expense-list {
+    margin-top: 12px;
+}
+
+.expense-date {
+    color: #9eb8b0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* popup section */
+
+.hide {
+    display: none;
+}
+
+.expense-popup {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #293833;
+    padding: 28px;
+    width: 450px;
+}
+
+#cross {
+    cursor: pointer;
+}
+
+.popup-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-start h2 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.expense-popup p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+input {
+    padding: 8px 12px;
+    background-color: #3d524d;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9eb8b0;
+    margin-top: 8px;
+    font-family: "Epilogue";
+}
+
+input::placeholder {
+    color: #9eb8b0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.expense-popup-button {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 12px;
+    background-color: #121717;
+    color: #fff;
+}

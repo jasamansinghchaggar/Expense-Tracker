@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Feather icon link -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/dist/feather.min.js"></script>
+
+    <!-- Use of moment.js for date formatting -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+</head>
+<body>
+    
+    <div id="expense-container">
+        <div class="container">
+            <div class="row">
+
+                <h1>Your Expense Tracker</h1>
+
+                <button id="expense-entry-button">Enter your expense</button>
+
+                <section class="expense-overview">
+                    <h2>Expense Overview</h2>
+                    <p id="expense-total">₹0</p>
+                    <p class="date">Last 30 days</p>
+                </section>
+
+                <section class="expense-information">
+                    <h2>Individual Expenses</h2>
+                    <ul class="expense-list">
+                        
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <section id="expense-popup" class="expense-popup hide">
+        <div class="popup-start">
+            <h2>Enter your expense</h2>
+            <i data-feather="x" id="cross"></i>
+        </div>
+        <form action="">
+            <p>Title of your expense</p>
+            <input type="text" placeholder="Eg: Flight tickets, restaurant dining, etc" id="title" required />
+    
+            <p>Amount of expenditure</p>
+            <input type="text" placeholder="Please enter your amount in USD" id="amount" required />
+    
+            <p>Date of expenditure</p>
+            <input type="date" placeholder="MM/DD/YY" id="date" required />
+    
+            <button class="expense-popup-button" id="submut">Submit</button>
+        </form>
+    </section>
+
+</body>
+
+<script src="main.js"></script>
+</html>
