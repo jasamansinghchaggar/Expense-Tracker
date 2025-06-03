@@ -157,6 +157,12 @@ input:focus {
     outline: none;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .expense-popup-button {
     margin-top: 30px;
     font-size: 16px;
@@ -167,4 +173,21 @@ input:focus {
     border-radius: 12px;
     background-color: #121717;
     color: #fff;
+}
+
+/* Style for the delete button */
+button.delete-expense {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-expense:hover {
+    background-color: #e60000;
 }
